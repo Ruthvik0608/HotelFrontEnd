@@ -16,6 +16,8 @@ body {
 }
 .search-form {
     margin-left: 40px; /* Adds distance between the "Home" button and search form */
+}.search-form {
+    margin-left: 40px; /* Adds distance between the "Home" button and search form */
 }
 .btn-custom-signup {
     border-color: #007bff;
