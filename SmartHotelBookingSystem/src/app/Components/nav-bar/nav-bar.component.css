@@ -1,0 +1,159 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-family: 'Georgia', serif;
+    color: #ff5722;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* User Options Styles */
+.user-options .login-btn {
+    color: #fff;
+    text-decoration: wavy;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    border-radius: 10 px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.user-options .login-btn:hover {
+    background-color: #0056b3;
+    border-radius: 10px;
+}
+
+.user-options .login-btn svg {
+    fill: #fff;
+    border-radius: 10px;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: url('https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    transition: ease-in;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    transition: ease-in;
+
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #e64a19;
+}
+
+/* Footer Styles */
+/* Footer Styles */
+footer {
+    position: fixed;
+    /* Keeps the footer at the bottom */
+    bottom: 0;
+    width: 100%;
+    /* Stretches the footer to fit the screen width */
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    margin-left: 20px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1080px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+}
