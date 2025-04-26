@@ -1,0 +1,147 @@
+/* Global Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures the page covers the entire viewport */
+    background: url('https://images.pexels.com/photos/31728412/pexels-photo-31728412/free-photo-of-modern-hotel-room-with-minimalist-decor.jpeg?auto=compress&cs=tinysrgb&w=1080x720') no-repeat center center/cover; /* Full-page and centered background image */
+    color: #333;
+    overflow: hidden; /* Prevents any unwanted scrollbars from appearing */
+}
+
+
+/* Container Styling */
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    /* background: rgba(255, 255, 255, 0.9); Semi-transparent background for the content */
+    border-radius: 10px;
+    overflow: hidden;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+/* Additional Sections can inherit the non-conflicting style */
+
+/* Left Section Styling */
+.left-section {
+    flex: 1;
+    position: relative;
+    background-color: #f5f5f5;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.promo-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.promo-text h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.promo-text p {
+    font-size: 1.2rem;
+}
+
+/* Right Section Styling */
+.right-section {
+    flex: 1;
+    padding: 30px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    height: 25rem;
+    border-radius: 20px;
+}
+
+.login-signup h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ab0606;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+form label {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.phone-input {
+    display: flex;
+    gap: 10px;
+}
+
+select, input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #0058b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 2rem;
+
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.sign-in-options {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.sign-in-options a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.sign-in-options a:hover {
+    text-decoration: underline;
+}
