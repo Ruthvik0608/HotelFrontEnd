@@ -19,19 +19,15 @@ body {
     overflow: hidden; /* Prevents any unwanted scrollbars from appearing */
 }
 
-
 /* Container Styling */
 .container {
     display: flex;
+    flex-direction: row;
     width: 80%;
     max-width: 1200px;
-    /* background: rgba(255, 255, 255, 0.9); Semi-transparent background for the content */
     border-radius: 10px;
     overflow: hidden;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
 }
-
-/* Additional Sections can inherit the non-conflicting style */
 
 /* Left Section Styling */
 .left-section {
@@ -123,7 +119,6 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
-
 }
 
 button:hover {
@@ -144,4 +139,67 @@ button:hover {
 
 .sign-in-options a:hover {
     text-decoration: underline;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .left-section, .right-section {
+        margin: 0;
+        border-radius: 10px;
+    }
+
+    .promo-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .promo-text p {
+        font-size: 1rem;
+    }
+
+    .login-signup h2 {
+        font-size: 1.5rem;
+    }
+
+    form label {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+
+    .sign-in-options {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .promo-text h1 {
+        font-size: 1.2rem;
+    }
+
+    .promo-text p {
+        font-size: 0.9rem;
+    }
+
+    .login-signup h2 {
+        font-size: 1.2rem;
+    }
+
+    form label {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 0.8rem;
+    }
+
+    .sign-in-options {
+        font-size: 16px;
+    }
 }

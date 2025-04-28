@@ -1,41 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hotel Deals</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Deals with Sidebar Filters</title>
+    
 </head>
 <body>
 <header>
-<h1>Hot Hotel Deals</h1>
+    <h1>Hot Hotel Deals</h1>
 </header>
 <main>
-<section class="deals">
-<article class="hotel">
-<img src="hotel1.jpg" alt="Grand Hyatt Goa">
-<h2>Grand Hyatt Goa</h2>
-<p><strong>Rating:</strong> 9.0 - Excellent (19,935 reviews)</p>
-<p><strong>Location:</strong> Goa, India</p>
-<p><strong>Price:</strong> ₹16 per night</p>
-<button>View Deal</button>
-</article>
-<article class="hotel">
-<img src="hotel2.jpg" alt="Kihaa Maldives">
-<h2>Kihaa Maldives</h2>
-<p><strong>Rating:</strong> 8.5 - Excellent (2,618 reviews)</p>
-<p><strong>Location:</strong> Maldives</p>
-<p><strong>Price:</strong> ₹9,501 per night</p>
-<button>View Deal</button>
-</article>
-<article class="hotel">
-<img src="hotel3.jpg" alt="Fairfield by Marriott Goa">
-<h2>Fairfield by Marriott Goa</h2>
-<p><strong>Rating:</strong> 8.6 - Excellent (2,983 reviews)</p>
-<p><strong>Location:</strong> Goa, India</p>
-<p><strong>Price:</strong> ₹5,339 per night</p>
-<button>View Deal</button>
-</article>
-</section>
+    <div class="container">
+        <aside class="filters">
+            <h2>Filters</h2>
+            <form>
+                <ul>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="price_adjustment">
+                            Price Adjustment
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="family_stays">
+                            Family Stays
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="group_travelers">
+                            Group Travelers
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="local_id">
+                            Local ID Accepted
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="couple_friendly">
+                            Couple Friendly
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="recommended_oyos">
+                            Recommended OYOs
+                        </label>
+                    </li>
+                </ul>
+                <button type="submit">Apply Filters</button>
+            </form>
+        </aside>
+        <section class="deals">
+            <article class="hotel">
+                <img src="https://www.ahstatic.com/photos/7089_ho_00_p_1024x768.jpg" alt="NOVOTEL">
+                <h2>NOVOTEL</h2>
+                <p><strong>Rating:</strong> 9.0 - Excellent (19,935 reviews)</p>
+                <p><strong>Location:</strong> Chennai, India</p>
+                <p><strong>Price:</strong> ₹5000 per night</p>
+                <a class="btn" routerLink="/app-hotel-detail">View Deal</a>
+            </article>
+            
+            <article class="hotel">
+                <img src="hotel2.jpg" alt="Kihaa Maldives">
+                <h2>Kihaa Maldives</h2>
+                <p><strong>Rating:</strong> 8.5 - Excellent (2,618 reviews)</p>
+                <p><strong>Location:</strong> Maldives</p>
+                <p><strong>Price:</strong> ₹9,501 per night</p>
+                <button>View Deal</button>
+            </article>
+            <article class="hotel">
+                <img src="hotel3.jpg" alt="Fairfield by Marriott Goa">
+                <h2>Fairfield by Marriott Goa</h2>
+                <p><strong>Rating:</strong> 8.6 - Excellent (2,983 reviews)</p>
+                <p><strong>Location:</strong> Goa, India</p>
+                <p><strong>Price:</strong> ₹5,339 per night</p>
+                <button>View Deal</button>
+            </article>
+            <!-- Add more hotel cards below -->
+            <article class="hotel">
+                <img src="hotel4.jpg" alt="Taj Exotica Resort & Spa">
+                <h2>Taj Exotica Resort & Spa</h2>
+                <p><strong>Rating:</strong> 9.2 - Superb (3,456 reviews)</p>
+                <p><strong>Location:</strong> Maldives</p>
+                <p><strong>Price:</strong> ₹25,000 per night</p>
+                <button>View Deal</button>
+            </article>
+            <article class="hotel">
+                <img src="hotel5.jpg" alt="The Oberoi Udaivilas">
+                <h2>The Oberoi Udaivilas</h2>
+                <p><strong>Rating:</strong> 9.5 - Exceptional (1,234 reviews)</p>
+                <p><strong>Location:</strong> Udaipur, India</p>
+                <p><strong>Price:</strong> ₹30,000 per night</p>
+                <button>View Deal</button>
+            </article>
+            <article class="hotel">
+                <img src="hotel6.jpg" alt="Le Meridien Bora Bora">
+                <h2>Le Meridien Bora Bora</h2>
+                <p><strong>Rating:</strong> 8.8 - Excellent (789 reviews)</p>
+                <p><strong>Location:</strong> Bora Bora, French Polynesia</p>
+                <p><strong>Price:</strong> ₹45,000 per night</p>
+                <button>View Deal</button>
+            </article>
+        </section>
+    </div>
 </main>
 </body>
 </html>

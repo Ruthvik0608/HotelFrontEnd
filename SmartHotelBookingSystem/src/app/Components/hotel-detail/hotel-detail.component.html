@@ -1,0 +1,11 @@
+<div class="hotel-detail">
+    <img [src]="hotel?.image" alt="Hotel Image">
+    <h2>{{ hotel?.name }}</h2>
+    <p><strong>Rating:</strong> {{ hotel?.rating }} - Excellent ({{ hotel?.reviews }} reviews)</p>
+    <p><strong>Location:</strong> {{ hotel?.location }}</p>
+    <p><strong>Price:</strong> ₹{{ hotel?.price }} per night</p>
+    <p><strong>Description:</strong> {{ hotel?.description }}</p>
+    <p><strong>Amenities:</strong> {{ hotel?.amenities }}</p>
+    <p><strong>Contact:</strong> {{ hotel?.contact }}</p>
+    <button (click)="goBack()">Back to Deals</button>
+</div>

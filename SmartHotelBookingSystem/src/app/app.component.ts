@@ -2,12 +2,14 @@ import { Component } from '@angular/core';
 import { NavBarComponent } from "./Components/nav-bar/nav-bar.component";
 import { LoginPageComponent } from "./Components/login-page/login-page.component";
 import { HotelsViewComponent } from "./Components/hotels-view/hotels-view.component";
+import { RouterModule, RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
-  imports: [NavBarComponent, HotelsViewComponent],
+  imports: [ RouterOutlet],
+
 
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'SmartHotelBookingSystem';
